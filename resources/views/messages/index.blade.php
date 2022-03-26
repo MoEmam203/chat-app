@@ -1,10 +1,17 @@
-<script src="https://cdn.socket.io/4.0.1/socket.io.min.js"
-    integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous">
-</script>
-<script>
-    let socket = io('localhost' + ':6001');
-    
-    socket.on('test', (data) => {
-        console.log(data);
-    })
-</script>
+@extends('layouts.app')
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Online Users</h1>
+                <hr>
+                <ul class="list-group">
+                    {{-- <li class="list-group-item">
+                        Mustafa
+                    </li> --}}
+                </ul>
+            </div>
+        </div>
+    </div>
+@stop
